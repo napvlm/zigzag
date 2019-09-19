@@ -1,0 +1,140 @@
+.contact {
+	height: 100vh;
+	width: 100vw;
+	background-image: url('../img/contacts_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: cover;
+	color: #fff;
+
+	.container-fluid {
+		max-width: 85% !important;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 30px;
+	}
+}
+
+// form styles 
+
+// input {
+// 	border: none;
+//     border-bottom: 1px solid #333;
+//     padding: 5px;
+//     margin-bottom: 20px;
+//     outline: none;
+//     width: 100%;
+//     color: #333;
+//     font-size: 1rem;
+// }
+
+.form-label {
+	color: #fff;
+	margin: 0;
+	display: block;
+	opacity: 1;
+	-webkit-transition: .333s ease top, .333s ease opacity;
+	transition: .333s ease top, .333s ease opacity;
+}
+.form-input {
+	border: none;
+    border-bottom: 1px solid #333;
+    padding: 5px;
+    margin-bottom: 3rem;
+    outline: none;
+    width: 100%;
+    color: #fff;
+    font-size: 1.125rem;
+    background: transparent;
+}
+
+.form-input:focus {
+	box-shadow: none;
+	border-color: #2d2d2e;
+	background: transparent;
+}
+
+.js-hide-label {
+	opacity: 0; 	
+}
+.js-unhighlight-label {
+	color: #999 
+}
+
+.contact_links {
+	position: relative;
+
+	li {
+
+		margin-top: 1.5rem;
+		
+		i {
+			color: $orange;
+			font-size: 1.25rem;
+			margin-right: .5rem;
+			padding-top: 8px;
+		}
+
+		a {
+			color: #fff;
+			font-size: 1.3125rem;
+			text-decoration: none;
+
+			&:hover {
+				color: #fff;
+				cursor: pointer;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.cf_wrap, .cf_left_wrap {
+	padding: 30px;
+}
+
+.cf_wrap {
+	box-shadow: 0 0 40px rgba(0,0,0,.3);
+}
+
+
+@media (min-width: 992px) {
+	.contact_links {
+		position: relative;
+		bottom: 0;
+	}
+}
+
+@media (max-width: 992px) {
+	.cf_wrap {
+		margin-top: 3%;
+	}
+
+	.contact_links {
+	position: relative;
+
+	li {
+
+		margin-top: 1.5rem;
+		
+		i {
+			color: $orange;
+			font-size: 1.5rem;
+			margin-right: 1.8rem;
+		}
+
+		a {
+			color: #fff;
+			font-size: 1rem;
+			text-decoration: none;
+
+			&:hover {
+				color: #fff;
+				cursor: pointer;
+				text-decoration: none;
+			}
+		}
+	}
+}
+}

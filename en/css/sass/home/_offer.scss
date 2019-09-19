@@ -1,0 +1,46 @@
+.offer {
+	height: 100vh;
+	width: 100vw;
+	background-image: url('../img/offer_bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	color: #fff;
+
+	.container {
+		position: relative;
+	    top: 45%;
+	    transform: translateY(-45%);
+	}
+}
+
+.offer_text {
+	max-width: 40rem;
+	margin-left: 3.5rem;
+}
+
+.button-offer {
+	margin-top: 3rem;
+}
+
+.offer_img {
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+#object {
+	position: absolute;
+	top: -4rem;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: -1;
+}
+
+.heading-offer {
+  font-size: 2.3rem;
+  // font-weight: bold;
+  opacity: 1;
+  color: #fff;
+}

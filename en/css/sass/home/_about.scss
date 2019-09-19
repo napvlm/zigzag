@@ -1,0 +1,33 @@
+.about {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../img/about_back.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    .container {
+        position: relative;
+        top: 40%;
+        transform: translateY(-40%);
+    }
+}
+
+.about_text {
+    max-width: 35rem;
+    margin-left: 8rem;
+    text-align: justify;
+}
+
+.about_line {
+    max-width: 85px;
+}
+
+.left-phrase-about {
+    position: relative;
+    left: 25px;
+    top: 4.0625rem;
+    p {
+        font-size: 1.125rem;
+    }
+}

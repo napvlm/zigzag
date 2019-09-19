@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- FA -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+    <!-- Local -->
+    <link rel="stylesheet" type="text/css" href="fullpage/dist/fullpage.min.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="fonts/circe/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Zigzag - IT company</title>
+</head>
+
+<body>
+
+    <div class="cursor cursor-shadow"></div>
+    <div class="cursor cursor-dot"></div>
+
+    <div class="logo">
+        <img src="img/logo-sm.png" alt="Zigzag logo">
+    </div>
+
+    <header class="header">
+
+        <div class="burger">
+            <div class="burger__patty"></div>
+            <div class="burger__patty"></div>
+            <div class="burger__patty"></div>
+        </div>
+
+        <div class="side_nav">
+
+            <!-- nomer sverhu -->
+            <div class="phone d-flex justify-content-end">
+                <img src="img/phone.png" alt="" class="img-fluid phone-icon">
+                <p class="text-center">
+                    <a href="tel:+380974777777">+38 / 097 / 477 77 77</a>
+                    <br>
+                    <img src="img/zigzag_line.png" alt="" class="img-fluid phone_orange_line">
+                    <a data-toggle="modal" data-target="#zayavkaModal" class="zvonok-link">
+                        перезвоните мне
+                    </a>
+                </p>
+            </div>
+
+            <div class="social">
+                <ul class="list-unstyled d-flex">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook"></i></li>
+                    </a>
+                    <!-- /.text-muted -->
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i></li>
+                    </a>
+                    <!-- /.text-muted -->
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-telegram-plane"></i></li>
+                    </a>
+                    <!-- /.text-muted -->
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-viber"></i>
+                        </a>
+                    </li>
+                    <!-- /.text-muted -->
+                </ul>
+                <!-- /.list-unstyled d-flex -->
+            </div>
+            <!-- /.social -->
+
+            <!-- language switcher -->
+            <div class="lang-btns">
+                <ul class="list-unstyled d-flex">
+                    <li>
+                        <img src="img/zigzag_line.png" alt="" class="img-fluid lang_orange_line">
+                    </li>
+                    <li>
+                        <a href="en/index.html">ENG</a>
+                    </li>
+                    <li class="slash">/</li>
+                    <li>
+                        <a href="#" class="lang_active">РУС</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <nav class="menu">
+            <div class="menu__brand">
+
+                <a href="tel:+380974777777" class="lil_phone">+38 / 097 / 477 77 77</a>
+
+                <ul class="list-unstyled d-flex justify-content-between menu__social">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook"></i></li>
+                    </a>
+                    <!-- /.text-muted -->
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i></li>
+                    </a>
+                    <!-- /.text-muted -->
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-telegram-plane"></i></li>
+                    </a>
+                    <!-- /.text-muted -->
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-viber"></i>
+                        </a>
+                    </li>
+                    <!-- /.text-muted -->
+                </ul>
+                <!-- /.list-unstyled d-flex -->
+
+                <ul class="list-unstyled d-flex justify-content-between menu__lang">
+                    <li>
+                        <a href="en/index.html">ENG</a>
+                    </li>
+                    <li class="slash">/</li>
+                    <li>
+                        <a href="#" class="lang_active">РУС</a>
+                    </li>
+                </ul>
+                <!-- end .lang-btns -->
+
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__item"><a href="/" class="menu__link">ГЛАВНАЯ</a></li>
+                <li class="menu__item"><a href="/#Проекты" class="menu__link cases_menu_link">КЕЙСЫ</a></li>
+                <li class="menu__item"><a href="/team.html" class="menu__link">ОСНОВАТЕЛИ</a></li>
+                <li class="menu__item"><a href="/#Контакты" class="menu__link contact_link">КОНТАКТЫ</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- ОСТАВИТЬ ЗАЯВКУ MODAL -->
+        <div class="modal fade" id="zayavkaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Оставить заявку</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&#10005;</span>
+                </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <form id="contact-form" class="form" action="#" method="POST" role="form">
+                                    <div class="form-group">
+                                        <label class="form-label" for="name">Ваше имя</label>
+                                        <input type="text" class="form-input" id="name" name="name" placeholder="Ваше имя" tabindex="1" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="tel">Ваш номер телефона</label>
+                                        <input type="tel" class="form-input" id="tel" name="tel" placeholder="Ваш номер телефона" tabindex="2" required onkeypress="return isNumberKey(event)">
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="submit">
+                                <a href="#" class="btn-zg-sm"><span>Отправить</span></a>
+                              </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- END ОСТАВИТЬ ЗАЯВКУ MODAL -->
+
+    </header>
+
+    <div id="fullpage" class="fadein">
+        <div class="section">
+            <section class="hero">
+
+                <div class="left-phrase">
+                    <p class="text-muted">
+                        Сайты с прицел<span class="target"><i class="fas fa-bullseye"></i></span>м на будущее
+                    </p>
+                </div>
+
+                <div class="container hero__center">
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/logo_ZIGZAG1.png" alt="" class="img-fluid hero-logo">
+                            <br>
+                            <div class="row justify-content-center slogan">
+                                <div class="col-xs-6 ziglane">
+                                    <img src="img/zigzag_line.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="heading-wrap">
+                                        <p class="rev-block">
+                                            <span>WEB INNOVATION</span>
+                                        </p>
+                                    </div>
+                                    <!-- <p>
+                                      WEB INNOVATION
+                                    </p> -->
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <div class="button-center mt-5" data-toggle="modal" data-target="#zayavkaModal" style="text-align: center;">
+                                        <a href="#" class="btn-zg hvr-shutter-in-horizontal"><span>Начать проект</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll_down">
+                    <div class="c-scrolldown">
+                        <div class="c-line"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.hero -->
+        </div>
+        <!-- end .section -->
+
+        <div class="section">
+            <section class="about">
+                <div class="left-phrase">
+                    <p class="text-muted">
+                        О <span style="color: #c06c4b;">ZIGZAG</span>
+                    </p>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex justify-content-start">
+                            <h2 class="heading">
+                                О НАС
+                                <br>
+                                <img src="img/zigzag_line.png" alt="" class="img-fluid about_line fade-transition">
+                            </h2>
+                            <!-- /.heading -->
+                        </div>
+                        <!-- /.col d-flex justify-content-start -->
+                    </div>
+                    <!-- /.row -->
+
+                    <div class="row">
+                        <div class="col">
+                            <p class="regular about_text">
+                                <span>
+                                  ZIGZAG - инновационная web компания. Наш подход к решению задач — это прежде всего разработка стратегии и плана развития бизнеса. Выступая партнером, а не исполнителем, мы создадим рабочий инструмент, который демонстрирует сильные стороны вашего продукта.
+                              </span>
+                            </p>
+                            <!-- /.regular -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+                <div class="scroll_down">
+                    <div class="c-scrolldown">
+                        <div class="c-line"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- end .about -->
+        </div>
+        <!-- /.section -->
+        <div class="section">
+            <section class="services">
+
+                <div class="left-phrase">
+                    <p class="text-muted">
+                        Наши услуги
+                    </p>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <ul class="list-unstyled slider__list d-flex justify-content-between">
+                                <li onclick="currentSlide(1)" class="control d-flex">
+                                    <img src="img/zigzag_line.png" alt="" class="img-fluid slider_line">
+                                    <p>Разработка web-сайтов</p>
+                                </li>
+
+                                <li onclick="currentSlide(2)" class="control d-flex">
+                                    <img src="img/zigzag_line.png" alt="" class="img-fluid slider_line">
+                                    <p>Разработка и внедрение <br> систем автоматизации</p>
+                                </li>
+
+                                <li onclick="currentSlide(3)" class="control d-flex">
+                                    <img src="img/zigzag_line.png" alt="" class="img-fluid slider_line">
+                                    <p>Мобильные приложения</p>
+                                </li>
+
+                                <li onclick="currentSlide(4)" class="control d-flex">
+                                    <img src="img/zigzag_line.png" alt="" class="img-fluid slider_line">
+                                    <p>Комплексные решения</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- end .col -->
+                    </div>
+                    <!-- /.row -->
+
+                    <div class="row slider_wrap">
+                        <div class="col slide_services">
+                            <div class="row d-flex h-100">
+                                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
+                                    <h3 class="sub fade-transition rev-block">
+                                        <span>
+                                        РАЗРАБОТКА WEB-САЙТОВ
+                                      </span>
+                                    </h3>
+                                    <br>
+                                    <img src="img/zigzag_line.png" alt="" class="img-fluid about_line fade-transition">
+                                    <div class="mob-numbertext fade-transition">01 / 04</div>
+                                    <p class="regular services_desc fade-transition rev-block" id="delay">
+                                        <span>
+                                          Разрабатывая с нашей помощью сайт, Вы реализуете свои самые смелые и амбициозные идеи. В наше время сайт — это не просто визитка, это один из важнейших маркетинговых инструментов любой компании. Возьмите бизнес под свой контроль с первых шагов!
+                                      </span>
+                                    </p>
+                                    <div class="btn-slider-sm d-flex justify-content-center rev-block">
+                                        <span>
+                                             <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div class="slider_img-01 fade-transition">
+                                        <div class="numbertext">01 / 04</div>
+                                        <div class="button-slider">
+                                            <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col slide_services">
+                            <div class="row d-flex h-100">
+                                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
+                                    <h3 class="sub fade-transition rev-block">
+                                        <span>
+                                          РАЗРАБОТКА И ВНЕДРЕНИЕ
+                                          <br> СИСТЕМ АВТОМАТИЗАЦИИ
+                                      </span>
+                                    </h3>
+                                    <br>
+                                    <img src="img/zigzag_line.png" alt="" class="img-fluid about_line fade-transition">
+                                    <div class="mob-numbertext fade-transition">02 / 04</div>
+                                    <p class="regular services_desc fade-transition rev-block" id="delay">
+                                        <span>
+                                          Автоматизация бизнеса — естественный процесс для развивающейся компании, когда объем стандартных ежедневных операций вас захлестывает. Использование автоматической системы избавит вас от большого количества мелких «ручных» ошибок, систематизирует поток
+                                          информации, приведет в порядок базы данных и принесет ощутимый финансовый результат.
+                                      </span>
+                                    </p>
+                                    <div class="btn-slider-sm d-flex justify-content-center rev-block">
+                                        <span>
+                                             <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div class="slider_img-02 fade-transition">
+                                        <div class="numbertext">02 / 04</div>
+                                    </div>
+                                    <div class="button-slider">
+                                        <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col slide_services">
+                            <div class="row d-flex h-100">
+                                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
+                                    <h3 class="sub fade-transition rev-block">
+                                        <span>
+                                          МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ
+                                      </span>
+                                    </h3>
+                                    <br>
+                                    <img src="img/zigzag_line.png" alt="" class="img-fluid about_line fade-transition">
+                                    <div class="mob-numbertext fade-transition">03 / 04</div>
+                                    <p class="regular services_desc fade-transition rev-block" id="delay">
+                                        <span>
+                                          Покупки, заказ любимого блюда, вызов такси или любой другой повседневный каприз современного человека напрямую связан со смартфоном. Сотовое устройство стало для нас настоящим другом и теперь значительно упрощает решение повседневных задач, тем самым
+                                          меняя наше отношение к информации. Не будет ошибкой утверждение , что мобильные технологии развиваются со скоростью света и что приложения стали неотъемлемой частью цифровой экосистемы. Приложения развиваются и
+                                          присутствуют в каждой сфере.
+                                          <br> Разрабатываем мобильные приложения для платформ iOS и Android
+                                      </span>
+                                    </p>
+                                    <div class="btn-slider-sm d-flex justify-content-center rev-block">
+                                        <span>
+                                             <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div class="slider_img-03 fade-transition">
+                                        <div class="numbertext">03 / 04</div>
+                                    </div>
+                                    <div class="button-slider">
+                                        <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col slide_services">
+                            <div class="row d-flex h-100">
+                                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
+                                    <h3 class="sub fade-transition rev-block">
+                                        <span>
+                                          КОМПЛЕКСНЫЕ РЕШЕНИЯ
+                                      </span>
+                                    </h3>
+                                    <br>
+                                    <img src="img/zigzag_line.png" alt="" class="img-fluid about_line fade-transition">
+                                    <div class="mob-numbertext fade-transition">04 / 04</div>
+                                    <p class="regular services_desc fade-transition rev-block" id="delay">
+                                        <span>
+                                          Наши решения — это комплексное обслуживание бизнеса от А до Я. Быстро, профессионально, точно в срок и без скрытых платежей. Вы получите сайт, реализующий основные задачи: создание репутации компании, привлечение клиентов, рост продаж, развитие бизнеса.
+                                      </span>
+                                    </p>
+                                    <div class="btn-slider-sm d-flex justify-content-center rev-block">
+                                        <span>
+                                             <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <div class="slider_img-06 fade-transition">
+                                        <div class="numbertext">04 / 04</div>
+                                    </div>
+                                    <div class="button-slider">
+                                        <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row  -->
+
+                    <div class="row">
+                        <div class="controls_wrap">
+                            <a class="prev" onclick="plusSlides(-1)">
+                                <button class="arrow left">
+                                <svg width="15px" height="20px" viewBox="0 0 50 80" xml:space="preserve">
+                                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                                45.63,75.8 0.375,38.087 45.63,0.375 "/>
+                                </svg>  
+                              </button>
+                            </a>
+                            <a class="next" onclick="plusSlides(1)">
+                                <button class="arrow right">
+                                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="20px" viewBox="0 0 50 80" xml:space="preserve">
+                                    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                                  0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                                  </svg>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile_services">
+                        <!-- Swiper -->
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                        <div class="row d-flex h-100">
+                                                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
+                                                    <h3 class="sub fade-transition rev-block">
+                                                        <span>
+                                                        РАЗРАБОТКА WEB-САЙТОВ
+                                                      </span>
+                                                    </h3>
+                                                    <br>
+                                                    <img src="img/zigzag_line.png" alt="" class="img-fluid about_line fade-transition">
+                                                    <div class="mob-numbertext fade-transition">01 / 04</div>
+                                                    <p class="regular services_desc fade-transition rev-block" id="delay">
+                                                        <span>
+                                                          Разрабатывая с нашей помощью сайт, Вы реализуете свои самые смелые и амбициозные идеи. В наше время сайт — это не просто визитка, это один из важнейших маркетинговых инструментов любой компании. Возьмите бизнес под свой контроль с первых шагов!
+                                                      </span>
+                                                    </p>
+                                                    <div class="btn-slider-sm d-flex justify-content-center rev-block">
+                                                        <span>
+                                                             <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <div class="slider_img-01 fade-transition">
+                                                        <div class="numbertext">01 / 04</div>
+                                                        <div class="button-slider">
+                                                            <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="row d-flex h-100">
+                                                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
+                                                    <h3 class="sub fade-transition rev-block">
+                                                        <span>
+                                                          РАЗРАБОТКА И ВНЕДРЕНИЕ
+                                                          <br> СИСТЕМ АВТОМАТИЗАЦИИ
+                                                      </span>
+                                                    </h3>
+                                                    <br>
+                                                    <img src="img/zigzag_line.png" alt="" class="img-fluid about_line fade-transition">
+                                                    <div class="mob-numbertext fade-transition">02 / 04</div>
+                                                    <p class="regular services_desc fade-transition rev-block" id="delay">
+                                                        <span>
+                                                          Автоматизация бизнеса — естественный процесс для развивающейся компании, когда объем стандартных ежедневных операций вас захлестывает. Использование автоматической системы избавит вас от большого количества мелких «ручных» ошибок, систематизирует поток
+                                                          информации, приведет в порядок базы данных и принесет ощутимый финансовый результат.
+                                                      </span>
+                                                    </p>
+                                                    <div class="btn-slider-sm d-flex justify-content-center rev-block">
+                                                        <span>
+                                                             <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <div class="slider_img-02 fade-transition">
+                                                        <div class="numbertext">02 / 04</div>
+                                                    </div>
+                                                    <div class="button-slider">
+                                                        <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="row d-flex h-100">
+                                                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
+                                                    <h3 class="sub fade-transition rev-block">
+                                                        <span>
+                                                          МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ
+                                                      </span>
+                                                    </h3>
+                                                    <br>
+                                                    <img src="img/zigzag_line.png" alt="" class="img-fluid about_line fade-transition">
+                                                    <div class="mob-numbertext fade-transition">03 / 04</div>
+                                                    <p class="regular services_desc fade-transition rev-block" id="delay">
+                                                        <span>
+                                                          Покупки, заказ любимого блюда, вызов такси или любой другой повседневный каприз современного человека напрямую связан со смартфоном. Сотовое устройство стало для нас настоящим другом и теперь значительно упрощает решение повседневных задач, тем самым
+                                                          меняя наше отношение к информации. Не будет ошибкой утверждение , что мобильные технологии развиваются со скоростью света и что приложения стали неотъемлемой частью цифровой экосистемы. Приложения развиваются и
+                                                          присутствуют в каждой сфере.
+                                                          <br> Разрабатываем мобильные приложения для платформ iOS и Android
+                                                      </span>
+                                                    </p>
+                                                    <div class="btn-slider-sm d-flex justify-content-center rev-block">
+                                                        <span>
+                                                             <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <div class="slider_img-03 fade-transition">
+                                                        <div class="numbertext">03 / 04</div>
+                                                    </div>
+                                                    <div class="button-slider">
+                                                        <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="swiper-slide">
+                                        <div class="row d-flex h-100">
+                                                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center">
+                                                    <h3 class="sub fade-transition rev-block">
+                                                        <span>
+                                                          КОМПЛЕКСНЫЕ РЕШЕНИЯ
+                                                      </span>
+                                                    </h3>
+                                                    <br>
+                                                    <img src="img/zigzag_line.png" alt="" class="img-fluid about_line fade-transition">
+                                                    <div class="mob-numbertext fade-transition">04 / 04</div>
+                                                    <p class="regular services_desc fade-transition rev-block" id="delay">
+                                                        <span>
+                                                          Наши решения — это комплексное обслуживание бизнеса от А до Я. Быстро, профессионально, точно в срок и без скрытых платежей. Вы получите сайт, реализующий основные задачи: создание репутации компании, привлечение клиентов, рост продаж, развитие бизнеса.
+                                                      </span>
+                                                    </p>
+                                                    <div class="btn-slider-sm d-flex justify-content-center rev-block">
+                                                        <span>
+                                                             <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <div class="slider_img-06 fade-transition">
+                                                        <div class="numbertext">04 / 04</div>
+                                                    </div>
+                                                    <div class="button-slider">
+                                                        <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                </div>
+                                <!-- Add Arrows -->
+                                <!-- <div class="swiper-button-next">
+                                        <button class="arrow right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="50px" viewBox="0 0 50 80" xml:space="preserve">
+                                                    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                                                0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                                                </svg>
+                                            </button>
+                                </div>
+                                <div class="swiper-button-prev">
+                                        <button class="arrow left">
+                                                <svg width="25px" height="50px" viewBox="0 0 50 80" xml:space="preserve">
+                                                    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                                                45.63,75.8 0.375,38.087 45.63,0.375 "/>
+                                                </svg>  
+                                            </button>
+                                </div> -->
+                            </div>
+                        </div>
+                
+                <!-- /.container -->
+                <div class="scroll_down">
+                    <div class="c-scrolldown">
+                        <div class="c-line"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.services -->
+        </div>
+        <!-- /.section -->
+
+        <div class="section">
+            <section class="projects">
+                <div class="left-phrase">
+                    <p class="text-muted">
+                        Наши проекты
+                    </p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="projects-slider">
+                                <!-- Swiper -->
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="projects-info">
+                                                <h2 class="heading">Light Studio Photo Space</h2>
+                                                <p>Concept, web development and implementation of the CRM system</p>
+                                            </div>
+                                            <div class="project-img">
+                                                <img src="img/projects/studio.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="projects-info">
+                                                <h2 class="heading">Lofti Space</h2>
+                                                <p>Web production</p>
+                                            </div>
+                                            <div class="project-img">
+                                                <img src="img/projects/lofti.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="projects-info">
+                                                <h2 class="heading">Pelts clinic</h2>
+                                                <p>Web production and implementation of the CRM system</p>
+                                            </div>
+                                            <div class="project-img">
+                                                <img src="img/projects/pelts.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="projects-info">
+                                                <h2 class="heading">Roshen App</h2>
+                                                <p>Tablet application for the Museum of the Factory</p>
+                                            </div>
+                                            <div class="project-img">
+                                                <img src="img/projects/rosh.png" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="projects-info">
+                                                <h2 class="heading">Jewelry PhotoCrab</h2>
+                                                <p>Web development</p>
+                                            </div>
+                                            <div class="project-img">
+                                                <img src="img/projects/crab.png" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="projects-info">
+                                                <h2 class="heading">Ковальская недвижимость</h2>
+                                                <p>Development of telegram, viber, messenger bots</p>
+                                            </div>
+                                            <div class="project-img">
+                                                <img src="img/projects/kovalska.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="projects-info">
+                                                <h2 class="heading">Kotlin Technology</h2>
+                                                <p>Web development</p>
+                                            </div>
+                                            <div class="project-img">
+                                                <img src="img/projects/kotlin.jpg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="projects-info">
+                                                <h2 class="heading">Форполимер</h2>
+                                                <p>Web development</p>
+                                            </div>
+                                            <div class="project-img">
+                                                <img src="img/projects/forpolimer.png" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next">
+                                        <button class="arrow right">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="50px" viewBox="0 0 50 80" xml:space="preserve">
+                                                        <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                                                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                                                    </svg>
+                                                </button>
+                                    </div>
+                                    <div class="swiper-button-prev">
+                                        <button class="arrow left">
+                                                    <svg width="25px" height="50px" viewBox="0 0 50 80" xml:space="preserve">
+                                                        <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                                                    45.63,75.8 0.375,38.087 45.63,0.375 "/>
+                                                    </svg>  
+                                                </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  <div class="button-projects">
+                   <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Заказать</span></a>
+                </div> -->
+                    <div class="scroll_down">
+                        <div class="c-scrolldown">
+                            <div class="c-line"></div>
+                        </div>
+                    </div>
+            </section>
+            <!-- /.projects -->
+            </div>
+            <!-- /.section -->
+
+            <div class="section" id="layer">
+                <section class="offer">
+
+                    <div class="left-phrase">
+                        <p class="text-muted">
+                            Наше предложение
+                        </p>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <h2 class="heading-offer">
+                                    КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ
+                                    <br>
+                                    <img src="img/zigzag_line.png" alt="" class="img-fluid about_line fade-transition">
+                                </h2>
+                                <!-- /.heading -->
+                                <!-- <p class="regular offer_text">
+                     Веб-студия Зигзаг создает высококачественные, отзывчивые сайты, с интуитивно понятной и простой в использовании системой управления CMS, индивидуальной графикой и адаптацией их к мобильным устройствам. Мы позаботимся о проверке кода и оптимизации для SEO или позиционирования в поисковой системе Google.
+                   </p> -->
+                                <p class="regular">
+                                    Оставьте свои данные и получите точный расчет вашего проекта.
+                                    <br> Пришло время создать наилучшую версии вашего бизнеса в цифровом пространстве
+                                </p>
+                                <!-- /.regular -->
+                                <div class="button-offer">
+                                    <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal" data-toggle="modal" data-target="#zayavkaModal"><span>Получить коммерческое</span></a>
+                                </div>
+                            </div>
+                            <!-- /.col-lg-6 col-md-6 col-sm-12 -->
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <img src="img/folder.png" alt="" class="offer_img" id="object">
+                            </div>
+                            <!-- /.col-lg-6 col-md-6 col-sm-12 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container -->
+                    <div class="scroll_down">
+                        <div class="c-scrolldown">
+                            <div class="c-line"></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /.offer -->
+            </div>
+            <!-- /.section -->
+
+            <div class="section">
+                <section class="contact">
+
+                    <div class="left-phrase">
+                        <p class="text-muted">
+                            Связь с нами
+                        </p>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 cf_left_wrap">
+                                <h2 class="heading-contact">
+                                    КОНТАКТЫ
+                                    <br>
+                                    <img src="img/zigzag_line.png" alt="" class="img-fluid about_line fade-transition">
+                                </h2>
+                                <!-- /.heading -->
+                                <p class="regular">
+                                    Веб-студия Зигзаг создает высококачественные, отзывчивые сайты.
+                                </p>
+
+                                <ul class="list-unstyled contact_links">
+                                    <li class="d-flex">
+                                        <i class="fas fa-phone"></i>
+                                        <a href="tel:+380974777777">+38 / 097 / 477 77 77</a>
+                                    </li>
+                                    <li class="d-flex">
+                                        <i class="fas fa-envelope"></i>
+                                        <a href="mailto:zakaz@zigzag.team">ZAKAZ@ZIGZAG.TEAM</a>
+                                    </li>
+                                </ul>
+                                <!-- /.list-unstyled -->
+                            </div>
+                            <!-- /.col-lg-6 col-md-6 col-sm-12 -->
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 cf_wrap">
+                                <h2 class="heading-contact">
+                                    ОБСУДИМ ВАШ ПРОЕКТ
+                                    <br>
+                                    <img src="img/zigzag_line.png" alt="" class="img-fluid about_line fade-transition">
+                                </h2>
+                                <!-- /.heading -->
+                                <form id="contact-form" class="form" action="#" method="POST" role="form">
+                                    <div class="form-group">
+                                        <label class="form-label" for="name">Ваше имя</label>
+                                        <input type="text" class="form-input" id="name" name="name" placeholder="Ваше имя" tabindex="1" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="tel">Ваш номер телефона</label>
+                                        <input type="tel" class="form-input" id="tel" name="tel" placeholder="Ваш номер телефона" tabindex="2" required onkeypress="return isNumberKey(event)">
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="submit">
+                            <a href="#" class="btn-zg-sm hvr-shutter-in-horizontal"><span>Отправить</span></a>
+                          </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /.col-lg-6 col-md-6 col-sm-12 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container -->
+                </section>
+                <!-- /.contact -->
+            </div>
+            <!-- /.section -->
+        </div>
+        <!-- end fullpage -->
+
+        <!-- jQuery first, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+        <!-- Greensock for animations on load-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
+
+        <!-- ScrollMagic for reveal animations -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+
+
+        <!-- <script src="node_modules/barba.js/dist/barba.min.js" type="text/javascript"></script> -->
+
+        <!-- Local -->
+        <script type="text/javascript" src="fullpage/dist/fullpage.min.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/slider.js"></script>
+        <!-- <script type="text/javascript" src="js/reveal.js"></script> -->
+
+</body>
+
+</html>

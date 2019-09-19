@@ -1,0 +1,116 @@
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../img/Z_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    &__center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.hero-logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 295px !important;
+}
+
+.slogan {
+    margin-top: 1.875rem;
+    position: relative;
+    font-size: 1.875rem;
+}
+
+.ziglane {
+    max-width: 130px;
+    margin-right: 1.25rem;
+}
+
+.scroll_down {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+// scroll down line
+$line-height: 80px;
+$line-height-abs: -80px;
+.border {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: #333;
+    vertical-align: middle;
+}
+
+.c-scrolldown {
+    width: 1px;
+    height: $line-height;
+    margin-left: 1rem;
+    overflow: hidden;
+    .c-line {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: linear-gradient(to bottom, $orange 50%, rgba(255, 255, 255, 0) 50%);
+        background-position: 0 $line-height-abs;
+        background-size: 100% 200%;
+        animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+    }
+}
+
+@keyframes scrolldown {
+    0% {
+        background-position: 0 $line-height-abs;
+    }
+    75% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 $line-height;
+    }
+}
+
+// @media (max-width: 992px) {
+// 	.border {
+// 		content: '';
+// 		display: inline-block;
+// 		width: 20px;
+// 		height: 1px;
+// 		background-color: #333;
+// 		vertical-align: middle;
+// 	}
+// 	.c-scrolldown {
+// 		width: 1px;
+// 		height: 60px;
+// 		margin-left: 1rem;
+// 		overflow: hidden;
+// 		.c-line {
+// 			width: 100%;
+// 			height: 100%;
+// 			display: block;
+// 			background: linear-gradient(to bottom, $orange 50%, rgba(255, 255, 255, 0) 50%);
+// 			background-position: 0 -60px;
+// 			background-size: 100% 600%;
+// 			animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+// 		}
+// 	}
+// 	@keyframes scrolldown {
+// 		0%{
+// 			background-position: 0 -60px;
+// 		}
+// 		75% {
+// 			background-position: 0 0;
+// 		}
+// 		100%{
+// 			background-position: 0 60px;
+// 		}
+// 	}
+// }

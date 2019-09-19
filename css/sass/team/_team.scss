@@ -1,0 +1,92 @@
+#fullpage {
+    // background-image: url('../img/projects_bg.jpg');
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-size: cover;
+    color: #fff;
+}
+
+.team-01,
+.team-02,
+.team-03 {
+    height: 100vh;
+    width: 100vw;
+    .container-fluid {
+        max-width: 90%;
+    }
+}
+
+.team-01 {
+    background: url('../img/vova-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-02 {
+    background: url('../img/evgen-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-03 {
+    background: url('../img/rost-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.team_line {
+    max-width: 135px;
+    max-height: 15px;
+    margin-left: 20px;
+    vertical-align: middle;
+    // margin-top: 20px;
+}
+
+.team_links {
+    color: $orange;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-right: 2rem;
+    &:hover {
+        color: rgba($orange, 0.8);
+        text-decoration: none;
+    }
+}
+
+.position_name {
+    font-size: 1.3125rem;
+    font-weight: 400;
+}
+
+.member-img {
+    max-height: 65vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.member-img-mobile {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    // .member-img {
+    // 	display: none;
+    // }
+    .member-img-mobile {
+        display: block;
+        max-height: 40vh;
+        margin-right: 1rem;
+    }
+    .team_text {
+        position: relative;
+        max-width: 100%;
+        padding: 10%;
+    }
+    .team_line {
+        display: none;
+    }
+}

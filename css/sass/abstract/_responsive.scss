@@ -1,0 +1,74 @@
+@media (max-width: 992px) {
+    .side_nav,
+    .left-phrase,
+    .left-phrase-about,
+    .slider__list,
+    .fp-nav,
+    .button-slider,
+    .controls_wrap {
+        display: none !important;
+    }
+    .slider_right {
+        margin-left: 6rem;
+    }
+    .offer_img {
+        display: none;
+    }
+    .heading-contact {
+        font-size: 2rem;
+    }
+    .regular {
+        font-size: 12px;
+        padding: 3%;
+    }
+    .heading {
+        font-size: 2rem;
+    }
+    .button-offer {
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+    .button-projects {
+        bottom: 3.5rem;
+    }
+    .about_line {
+        margin: 0;
+    }
+    .menu-icon {
+        $size: 30px;
+        height: $size;
+        width: $size;
+        position: fixed;
+        z-index: 2;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+    .nav__list-item {
+        position: relative;
+        display: block;
+    }
+    .logo {
+        display: inline-block;
+    }
+    .form-input {
+        margin: 0;
+    }
+    .contact {
+        .container-fluid {
+            max-width: 100% !important;
+        }
+    }
+    form {
+        button {
+            margin-top: 1.5rem
+        }
+    }
+    .slash {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .cf_left_wrap {
+        padding: 0px;
+    }
+}
